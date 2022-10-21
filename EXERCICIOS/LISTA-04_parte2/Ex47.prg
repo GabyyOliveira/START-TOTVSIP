@@ -1,4 +1,4 @@
-function Ex47()
+function Main()
 
     Local nValor1 := 0
     Local varmenor := 0
@@ -12,12 +12,15 @@ function Ex47()
         nValor1 := val(nValor1)
         if nValor1 > nDec
             QOUT("O Número Sorteado é Menor")
+        elseif nValor1 < nDec
+            QOUT("O Número Sorteado é Maior, continue tentando..." )
         else
-            QOUT("O Número Sorteado é Maior" + Alltrim(Str(nDec)))
+            QOUT("")
+            QOUT("PARABÉNS!! VOCÊ ACERTOU, O NÚMERO SORTEADO É: " + Alltrim(Str(nDec)))
+            QOUT("")
+            exit
         endif else
     end do
-    QOUT("")
-    QOUT("Parabéns Você Acertou!!!" + Alltrim(Str(nDec)))
-    QOUT("")
+   
 
 return nil

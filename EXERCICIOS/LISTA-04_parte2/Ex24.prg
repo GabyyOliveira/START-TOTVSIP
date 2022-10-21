@@ -1,21 +1,32 @@
 function ex24()
 
-    local nNota1 := 0
-    local nNota2 := 0
-    local nNota3 := 0
-    local nNota4 := 0
+    local nNota1 := -1
+    local nNota2 := -1
+    local nNota3 := -1
+    local nNota4 := -1
     local nMedia := 0
     local nMedia2 := 0
     local nExame := 0 
 
-    ACCEPT "Digite a Primeira Nota: " to nNota1
+    While nNota1 < 0 .or. nNota1 > 10
+        ACCEPT "Digite a Primeira Nota: " to nNota1
         nNota1 := val(nNota1)
-    ACCEPT "Digite a Segunda Nota: " to nNota2
+    end while
+
+    While nNota2 < 0 .or. nNota2 > 10
+        ACCEPT "Digite a Segunda Nota: " to nNota2
         nNota2 := val(nNota2)
-    ACCEPT "Digite a Terceira Nota: " to nNota3
+    end while
+
+    While nNota3 < 0 .or. nNota3 > 10
+        ACCEPT "Digite a Terceira Nota: " to nNota3
         nNota3 := val(nNota3)
+    end while
+
+    While nNota4 < 0 .or. nNota4 > 10
     ACCEPT "Digite a Quarta Nota: " to nNota4
         nNota4 := val(nNota4)
+    end while
 
     nMedia := (nNota1 + nNota2 + nNota3 + nNota4) / 4
 
