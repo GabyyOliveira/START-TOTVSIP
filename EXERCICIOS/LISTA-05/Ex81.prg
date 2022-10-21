@@ -199,7 +199,7 @@ static function vIngl()
 
         if nEUsuario == nEComputador
             QOUT("|                         DRAW                           |")
-            QOUT("|                     nobody dot or                      |")
+            QOUT("|                     nobody score                       |")
             QOUT("|                   ******************                   |")
             QOUT("|                                                        |")
         elseif (nEUsuario - nEComputador) == -1 .or. (nEUsuario - nEComputador) == 2 
