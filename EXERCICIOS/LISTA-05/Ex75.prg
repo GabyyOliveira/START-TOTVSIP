@@ -1,12 +1,14 @@
 function Main()
 
-    local nCont1 := 1
-    local nSoma := 0.5
+    local nNum := 1
+    local nCount := 2
+    local nResult := 1
 
-    while nCont1 <= 64
-        nSoma = nSoma * 2
-        nCont1++
+    while nCount <= 64
+        nNum *= 2 
+        nResult += nNum
+        nCount++
     end do
-    QOUT("A Quantidade de Graos de Trigo no Xadrez é: " + alltrim(str(nSoma)))
+    QOUT("A Quantidade de Graos de Trigo no tabuleiro é: " + alltrim(str(nResult)))
 
 return nil
