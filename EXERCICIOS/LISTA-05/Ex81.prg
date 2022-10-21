@@ -153,7 +153,7 @@ static function vIngl()
         QOUT("|                        SELECT:                         |")
         QOUT("|                                                        |")
         QOUT("|                    (1) => Paper                        |")
-        QOUT("|                    (2) => Stone                        |")
+        QOUT("|                    (2) => Rock                         |")
         QOUT("|                    (3) => Scissors                     |")
         QOUT("|                                                        |")
 
@@ -168,7 +168,7 @@ static function vIngl()
         if nEUsuario == 1
             QOUT("|                         PAPER                          |")
         elseif nEUsuario == 2
-            QOUT("|                         STONE                          |")
+            QOUT("|                         ROCK                           |")
         elseif nEUsuario == 3
             QOUT("|                        SCISSORS                        |")
         else
@@ -179,7 +179,7 @@ static function vIngl()
     
 
         QOUT("|                  *******************                   |")
-        QOUT("|                     COMPUTER CHOICE:                   |")
+        QOUT("|                   COMPUTER'S CHOICE:                   |")
 
         nEComputador := HB_RandomINT(1,3)
 
@@ -187,7 +187,7 @@ static function vIngl()
             QOUT("|                         PAPER                          |")
             QOUT("|                                                        |")
         elseif nEComputador == 2
-            QOUT("|                         STONE                          |")
+            QOUT("|                         ROCK                           |")
             QOUT("|                                                        |")
         elseif nEComputador == 3
             QOUT("|                        SCISSORS                        |")
@@ -198,13 +198,13 @@ static function vIngl()
         end if
 
         if nEUsuario == nEComputador
-            QOUT("|                          TIE                           |")
+            QOUT("|                         DRAW                           |")
             QOUT("|                     nobody dot or                      |")
             QOUT("|                   ******************                   |")
             QOUT("|                                                        |")
         elseif (nEUsuario - nEComputador) == -1 .or. (nEUsuario - nEComputador) == 2 
             nCountU++
-            QOUT("|                          WON!!!                        |")
+            QOUT("|                        WINNER!!!                       |")
             QOUT("|                   ******************                   |")
             QOUT("|                                                        |")
         else 
@@ -222,7 +222,7 @@ static function vIngl()
 
     if nCountU > nCountC
         QOUT("|                                                        |")
-        QOUT("|  CONGRATULATIONS YOU ARE THE BIG WINNER OF THE GAME    |")
+        QOUT("|          CONGRATULATIONS YOU ARE THE WINNER!!          |")
     else 
         QOUT("|                                                        |")
         QOUT("|                        GAME OVER                       |")
