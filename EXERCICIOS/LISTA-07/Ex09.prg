@@ -1,4 +1,4 @@
-set procedure to procedure_09.prg
+set procedure to procedures\Ex09_procedure.prg
 function Main()
     local aDados := {}
     local cNome  := "A"
@@ -6,7 +6,7 @@ function Main()
     local nCont  := 1
 
     while !Empty(cNome)
-        ACCEPT "Entre com o nome: " to cNome
+        ACCEPT "Entre com o nome, ou aperte enter para encerrar: " to cNome
         aAdd(aDados, cNome)
         nCont++
     enddo
